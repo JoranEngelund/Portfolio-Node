@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.css"
     />
-    <link href="./lib/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link href="./css/navbar.css" rel="stylesheet" />
     <link href="./css/header.css" rel="stylesheet" />
     <link href="./css/icons.css" rel="stylesheet" />
@@ -304,37 +304,24 @@
           <h2>Portfolio</h2>
           <p>Below you can see the cakes that I am proud of the most.</p>
           <div class="filters" id="filters">
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button
-                class="filter-button btn btn-primary active"
-                data-filter="all"
-              >
-                All
-              </button>
-              <button
-                class="filter-button btn btn-primary"
-                data-filter="wedding"
-              >
-                Wedding
-              </button>
-              <button
-                class="filter-button btn btn-primary"
-                data-filter="birthday"
-              >
-                Birthday
-              </button>
-              <button
-                class="filter-button btn btn-primary"
-                data-filter="christmas"
-              >
-                Christmas
-              </button>
-              <button
-                class="filter-button btn btn-primary"
-                data-filter="anniversary"
-              >
-                Anniversary
-              </button>
+            <div class="row">
+              <div class="col-xs-12 mx-auto mb-5">
+                <button class="btn active" onclick="filterSelection('all')">
+                  Show all
+                </button>
+                <button class="btn" onclick="filterSelection('wedding')">
+                  Wedding cakes
+                </button>
+                <button class="btn" onclick="filterSelection('christmas')">
+                  Christmas cakes
+                </button>
+                <button class="btn" onclick="filterSelection('birthday')">
+                  Birthday cakes
+                </button>
+                <button class="btn" onclick="filterSelection('anniversary')">
+                  Anniversary cakes
+                </button>
+              </div>
             </div>
           </div>
           <div class="filters row" id="filters">
@@ -342,7 +329,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/wedding1.jpeg"
+                  src="/public/img/wedding_cake.jpg"
                   alt="wedding cake"
                 />
               </div>
@@ -351,7 +338,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/wedding2.jpeg"
+                  src="/public/img/wedding_cake2.jpg"
                   alt="wedding cake"
                 />
               </div>
@@ -360,7 +347,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/wedding3.jpeg"
+                  src="/public/img/wedding_cake3.jpg"
                   alt="wedding cake"
                 />
               </div>
@@ -369,7 +356,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/wedding4.jpeg"
+                  src="/public/img/wedding_cake3.jpg"
                   alt="wedding cake"
                 />
               </div>
@@ -378,7 +365,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/birthday1.jpeg"
+                  src="/public/img/birthday_cake.jpg"
                   alt="birthday cake"
                 />
               </div>
@@ -387,7 +374,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/birthday2.jpeg"
+                  src="/public/img/birthday_cake2.jpg"
                   alt="birthday cake"
                 />
               </div>
@@ -396,7 +383,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/birthday3.jpeg"
+                  src="/public/img/birthday_cake2.jpg"
                   alt="birthday cake"
                 />
               </div>
@@ -405,7 +392,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/birthday4.jpeg"
+                  src="/public/img/birthday_cake2.jpg"
                   alt="birthday cake"
                 />
               </div>
@@ -414,7 +401,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/christmas1.jpeg"
+                  src="/public/img/christmas_cake.jpeg"
                   alt="christmas cake"
                 />
               </div>
@@ -423,7 +410,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/christmas2.jpeg"
+                  src="/public/img/christmas_cake2.jpeg"
                   alt="christmas cake"
                 />
               </div>
@@ -432,7 +419,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/christmas3.jpeg"
+                  src="/public/img/christmas_cake2.jpeg"
                   alt="christmas cake"
                 />
               </div>
@@ -441,7 +428,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/christmas4.jpeg"
+                  src="/public/img/christmas_cake2.jpeg"
                   alt="christmas cake"
                 />
               </div>
@@ -450,7 +437,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/anniversary1.jpeg"
+                  src="/public/img/anniversary_cake.jpeg"
                   alt="anniversary cake"
                 />
               </div>
@@ -459,7 +446,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/anniversary2.jpeg"
+                  src="/public/img/anniversary_cake2.jpeg"
                   alt="anniversary cake"
                 />
               </div>
@@ -468,7 +455,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/anniversary3.jpeg"
+                  src="/public/img/anniversary_cake2.jpeg"
                   alt="anniversary cake"
                 />
               </div>
@@ -477,7 +464,7 @@
               <div class="portfolio-box border-0 shadow">
                 <img
                   class="img-fluid"
-                  src="./img/anniversary4.jpeg"
+                  src="/public/img/anniversary_cake2.jpeg"
                   alt="anniversary cake"
                 />
               </div>
@@ -546,7 +533,7 @@
         </div>
       </section>
     </div>
-    <script src="./lib/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
     <script src="./js/navbar.js"></script>
     <script src="./js/header.js"></script>
